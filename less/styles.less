@@ -1,0 +1,56 @@
+@import "../bower_components/bootstrap/less/bootstrap.less";
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+@font-family-base: 'Open Sans', sans-serif;
+@font-weight-normal: 400;
+@font-weight-bold: 700;
+
+@color-white: rgba(255,255,255,1);
+@color-white-secondary: rgba(255,255,255,7);
+
+@color-black: rgba(0,0,0,.87);
+@color-black-secondary: rgba(0,0,0,.54);
+@color-black-divider: rgba(0,0,0,.12);
+
+@line-height-base:        1.8; // 20/14
+
+
+body{
+  font-weight: @font-weight-normal;
+  text-align: center;
+  background: url(../img/bg-header.jpg) no-repeat center center;  
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1,h2,h3,h4,h5,h6, strong{
+  font-weight: @font-weight-bold;
+}
+
+
+header{
+  padding: 200px 0;
+  color: @color-white;
+  box-shadow: inset 0 0 200px rgba(0,0,0,1);
+  text-shadow: 0 -1px 0 rgba(0,0,0,.6);
+}
+
+section, footer{
+  background: @color-white;
+  padding: 100px 0;
+//  border-bottom: 1px solid @color-black-divider;
+}
+
+.call{
+  background: @color-black-secondary;
+  box-shadow: inset 0 0 50px #000;
+  color: @color-white;
+
+}
+
+footer{
+  background: #222;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.6);
+}
