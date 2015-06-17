@@ -8,7 +8,7 @@
 
 @color-white: rgba(255,255,255,1);
 @color-white-secondary: rgba(255,255,255,.7);
-@color-white-divider: rgba(255,255,255,.5);
+@color-white-divider: rgba(255,255,255,.2);
 
 @color-black: rgba(0,0,0,.87);
 @color-black-secondary: rgba(0,0,0,.54);
@@ -58,11 +58,11 @@ h1,h2,h3,h4,h5,h6, strong, .btn-lg{
 header{
   color: @color-white;
   background: @color-black-divider;
-  box-shadow: inset 0 0 500px #570c13;
+  box-shadow: inset 0px 0px 300px #460d4b;
   text-shadow: 0 -1px 1px rgba(0,0,0,1);
   padding: 40px 0 80px 0;
   @media (min-width: @screen-md-min) { 
-    padding: 180px 0 220px 0;
+    padding: 100px 0 80px 0;
   }
 
   .btn{
@@ -93,7 +93,15 @@ header{
     img{
       height: 50px;
     }
-  }//h1
+  }//brand
+
+  .arrow{
+//    font-size: 60px;
+    color: @color-white-divider;
+    text-shadow: none;
+    margin-top: 40px;
+  }
+
 }
 
 section, footer{
@@ -119,7 +127,7 @@ section, footer{
 .call{
   text-shadow: 0 -1px 1px rgba(0,0,0,1);
   background: @color-black-divider;
-  box-shadow: inset 0 0 200px #570c13;
+  box-shadow: inset 0 0 200px #460d4b;
   color: @color-white;
   h2{
     margin-bottom: 20px;
