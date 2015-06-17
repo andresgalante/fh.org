@@ -7,7 +7,8 @@
 @font-weight-bold: 700;
 
 @color-white: rgba(255,255,255,1);
-@color-white-secondary: rgba(255,255,255,7);
+@color-white-secondary: rgba(255,255,255,.7);
+@color-white-divider: rgba(255,255,255,.5);
 
 @color-black: rgba(0,0,0,.87);
 @color-black-secondary: rgba(0,0,0,.54);
@@ -15,6 +16,7 @@
 
 @line-height-base:        1.8; // 20/14
 
+@link-color: @color-white-secondary;
 
 body{
   font-weight: @font-weight-normal;
@@ -30,7 +32,17 @@ h1,h2,h3,h4,h5,h6, strong{
 
 
 header{
-  padding: 80px 0 200px 0;
+  padding: 40px 0 80px 0;
+  @media (min-width: @screen-md-min) { 
+    padding: 140px 0 180px 0;
+  }
+  
+  .btn{
+    @media (max-width: @screen-xs-max) { 
+      .btn-block;
+    }    
+  }
+  
   color: @color-white;
   box-shadow: inset 0 0 200px rgba(0,0,0,1);
   text-shadow: 0 -1px 0 rgba(0,0,0,.6);
@@ -45,9 +57,11 @@ header{
       padding: 0 100px;
     }
   }
-
   .brand{
-    margin-bottom: 80px;
+    margin-bottom: 40px;
+    @media (min-width: @screen-md-min) { 
+      margin-bottom: 80px;
+    }
     img{
       height: 50px;
     }
@@ -56,14 +70,31 @@ header{
 
 section, footer{
   background: @color-white;
-  padding: 100px 0;
+  padding: 50px 0;
+  @media (min-width: @screen-md-min) { 
+    padding: 100px 0;
+  }
 //  border-bottom: 1px solid @color-black-divider;
+}
+
+.blurbs{
+  .col-md-4{
+    border-bottom: 1px solid @color-black-divider;
+    padding-bottom: 20px;
+    @media (min-width: @screen-md-min) { 
+      border-bottom: none;
+      padding-bottom: 0px;
+    }
+  }
 }
 
 .call{
   background: @color-black-secondary;
   box-shadow: inset 0 0 50px #000;
   color: @color-white;
+  h2{
+    margin-bottom: 20px;
+  }
   p{
 //    font-size:  @font-size-h4;
 //    margin-bottom: 30px;
@@ -78,4 +109,16 @@ footer{
   background: #222;
   color: #fff;
   text-shadow: 0 -1px 0 rgba(0,0,0,.6);
+  ul{
+    display: inline-block;
+//    border-bottom: 1px solid @color-white-divider;
+//    padding-bottom: 20px;
+    margin-bottom: 30px;
+  }
+  .rh-logo{
+    img{
+      height: 40px;
+    }
+  }
+  
 }
