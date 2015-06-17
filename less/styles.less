@@ -12,7 +12,7 @@
 
 @color-black: rgba(0,0,0,.87);
 @color-black-secondary: rgba(0,0,0,.54);
-@color-black-divider: rgba(0,0,0,.12);
+@color-black-divider: rgba(0,0,0,.3);
 
 @line-height-base:        1.8; // 20/14
 
@@ -21,9 +21,11 @@
 body{
   font-weight: @font-weight-normal;
   text-align: center;
-  background: url(../img/bg-header.jpg) no-repeat center center;  
+  background: url(../img/bg-header-new.jpg) no-repeat center center;  
   background-size: cover;
   background-attachment: fixed;
+  box-shadow: inset 0 0 200px #000;
+  
 }
 
 h1,h2,h3,h4,h5,h6, strong{
@@ -32,20 +34,20 @@ h1,h2,h3,h4,h5,h6, strong{
 
 
 header{
+  color: @color-white;
+  background: @color-black-divider;
+  box-shadow: inset 0 0 500px #570c13;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.6);
   padding: 40px 0 80px 0;
   @media (min-width: @screen-md-min) { 
     padding: 140px 0 180px 0;
   }
-  
+
   .btn{
     @media (max-width: @screen-xs-max) { 
       .btn-block;
     }    
   }
-  
-  color: @color-white;
-  box-shadow: inset 0 0 200px rgba(0,0,0,1);
-  text-shadow: 0 -1px 0 rgba(0,0,0,.6);
   
   h1{
     margin-bottom: 30px;
@@ -89,8 +91,8 @@ section, footer{
 }
 
 .call{
-  background: @color-black-secondary;
-  box-shadow: inset 0 0 50px #000;
+  background: @color-black-divider;
+  box-shadow: inset 0 0 200px #570c13;
   color: @color-white;
   h2{
     margin-bottom: 20px;
