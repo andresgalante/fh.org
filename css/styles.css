@@ -6833,7 +6833,6 @@ footer {
   }
 }
 .blurbs .col-md-4 {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
   padding-bottom: 20px;
 }
 @media (min-width: 992px) {
@@ -6852,8 +6851,11 @@ footer {
 }
 @media (min-width: 992px) {
   .call p {
-    padding: 0 100px;
+    padding: 0 140px;
   }
+}
+.call a {
+  margin-top: 20px;
 }
 footer {
   background: #222;
