@@ -12,11 +12,29 @@
 
 @color-black: rgba(0,0,0,.87);
 @color-black-secondary: rgba(0,0,0,.54);
-@color-black-divider: rgba(0,0,0,.3);
+@color-black-divider: rgba(0,0,0,.4);
 
 @line-height-base:        1.8; // 20/14
 
 @link-color: @color-white-secondary;
+
+
+@input-border-radius-large:      2px;
+@btn-border-radius-large:        2px;
+
+
+@btn-primary-color:              #fff;
+@btn-primary-bg:                 rgba(0,0,0,.8);
+@btn-primary-border:             darken(@btn-primary-bg, 5%);
+
+
+.btn, input{
+//  border-width: 0px!important;
+}
+
+input{
+//  border-color: #fff!important;
+}
 
 body{
   font-weight: @font-weight-normal;
@@ -28,19 +46,23 @@ body{
   
 }
 
-h1,h2,h3,h4,h5,h6, strong{
+h1,h2,h3,h4,h5,h6, strong, .btn-lg{
   font-weight: @font-weight-bold;
 }
 
+.btn{
+  text-shadow: none!important;
+  cursor: pointer!important;
+}
 
 header{
   color: @color-white;
   background: @color-black-divider;
   box-shadow: inset 0 0 500px #570c13;
-  text-shadow: 0 -1px 0 rgba(0,0,0,.6);
+  text-shadow: 0 -1px 1px rgba(0,0,0,1);
   padding: 40px 0 80px 0;
   @media (min-width: @screen-md-min) { 
-    padding: 140px 0 180px 0;
+    padding: 180px 0 220px 0;
   }
 
   .btn{
@@ -91,6 +113,7 @@ section, footer{
 }
 
 .call{
+  text-shadow: 0 -1px 1px rgba(0,0,0,1);
   background: @color-black-divider;
   box-shadow: inset 0 0 200px #570c13;
   color: @color-white;
@@ -110,6 +133,7 @@ section, footer{
 }
 
 footer{
+  border-top: 2px solid @color-black;
   background: #222;
   color: #fff;
   text-shadow: 0 -1px 0 rgba(0,0,0,.6);
