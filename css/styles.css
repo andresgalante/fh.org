@@ -6808,8 +6808,12 @@ header {
 }
 header h1 {
   margin-bottom: 30px;
-  padding: 0 100px;
   line-height: 50px;
+}
+@media (min-width: 992px) {
+  header h1 {
+    padding: 0 100px;
+  }
 }
 header p {
   font-size: 18px;

@@ -73,8 +73,10 @@ header{
   
   h1{
     margin-bottom: 30px;
-    padding: 0 100px;
     line-height: 50px;
+    @media (min-width: @screen-md-min) { 
+      padding: 0 100px;
+    }
   }
   p{
     font-size:  @font-size-h4;
