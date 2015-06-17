@@ -6808,6 +6808,8 @@ header {
 }
 header h1 {
   margin-bottom: 30px;
+  padding: 0 100px;
+  line-height: 50px;
 }
 header p {
   font-size: 18px;
